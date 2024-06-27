@@ -1,0 +1,177 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the entire app */
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the timeframe selector container */
+.timeframe-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Styles for the selector buttons */
+.timeframe-selector button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.timeframe-selector button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.timeframe-selector button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Styles for the chart container */
+.chart-container {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: calc(100% - 50px);
+  width: 100%;
+}
+
+/* Styles for the chart */
+.chart {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;  /* Smooth transition for chart updates */
+}
+
+/* Styles for the export button */
+.export-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .app-container {
+    height: 80vh;
+    padding: 15px;
+  }
+
+
+
+  .timeframe-selector {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .timeframe-selector button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .chart-container {
+    height: 70vh;
+  }
+
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .app-container {
+    height: 75vh;
+    padding: 15px;
+  }
+
+  .timeframe-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeframe-selector button {
+    width: 90%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .chart-container {
+    height: 60vh;
+  }
+
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    height: 70vh;
+    padding: 10px;
+  }
+
+  .timeframe-selector button {
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .chart-container {
+    height: 50vh;
+  }
+
+  .chart {
+    width: 100%;
+    height: 100%;
+  }
+}
