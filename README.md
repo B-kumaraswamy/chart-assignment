@@ -158,7 +158,6 @@ The styles for the app, including the chart and timeframe selector, are defined 
 
 This README provides an overview of the React Chart Application, including its features, project structure, setup instructions, and code details. For further customization and development, refer to the respective component files and adjust as needed.
 
-Feel free to reach out for any questions or contribute to this project via [GitHub](https://github.com/your-username/react-chart-application).
-```
+Feel free to reach out for any questions or contribute to this project via https://github.com/B-kumaraswamy/chart-assignment.git
 
-This detailed README should help both users and developers understand the structure and functionality of your React Chart Application.
+
